@@ -1,0 +1,46 @@
+.pagination-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 444;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px 4px 13px -2px #050505;
+    padding: 1em;
+
+  .pagination {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  
+    .page-item {
+      display: flex;
+  
+      .page-link {
+        color: #000000;
+        background: #ffffff;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border: 1px solid rgb(221, 221, 221);
+        font-size: 1.5em;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .page-item {
+        .page-link {
+          font-size: 1em;
+          padding: 4px 12px;
+        }
+      }
+    }
+  }
+}
